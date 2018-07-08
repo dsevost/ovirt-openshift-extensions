@@ -199,7 +199,7 @@ func (ovirt *Ovirt) CreateUnattachedDisk(diskName string, storageDomainName stri
 	disk := Disk{
 		Name:            diskName,
 		ProvisionedSize: uint64(sizeIbBytes),
-		Format:          "raw",
+		Format:          DiskFormat(format),
 		StorageDomains:  StorageDomains{[]StorageDomain{{Name: storageDomainName}}},
 	}
 
