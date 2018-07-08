@@ -1,5 +1,3 @@
-/bin
-/pkg
 *.ca
 *.retry
 deployment/*.retry
